@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  php:
+    image: php:7.4-apache
+    container_name: quick-php
+    volumes: 
+      - ./php:/var/www/html
+    ports: 
+      - 3000:80
